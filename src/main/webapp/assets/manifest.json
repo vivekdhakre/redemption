@@ -1,0 +1,27 @@
+{
+  "name": "Uahoy Merchant",
+  "version": "0.0.1",
+  "short_name": "Uahoy Merchant",
+  "description": "India's best Price Comparison and Product Discovery platform for Mobiles, Electronics, Appliances and Lifestyle products",
+  "icons": [
+    {
+      "src": "https://ads.uahoy.in/marketeer_app/assets/icon/web-icons/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0288d1",
+  "background_color": "#0288d1",
+  "start_url": "/marketeer_app/index.html",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "gcm_sender_id": "434874942290",
+  "gcm_user_visible_only": true,
+  "prefer_related_applications": false,
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": ""
+    }
+  ]
+}

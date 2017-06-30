@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans:beans
+        xmlns:beans="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.springframework.org/schema/security"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.1.xsd">
+
+    <http access-decision-manager-ref="accessDecisionManager">
+
+        <csrf disabled="true"/>
+
+        <form-login login-page="/"
+                    always-use-default-target="true"
+                    login-processing-url="/login"
+                    authentication-success-handler-ref="mySuccessHandler"
+                    authentication-failure-handler-ref="myFailureHandler"/>
+
+
+        <intercept-url pattern="/" access="permitAll"/>
+        <intercept-url pattern="/home" access="hasAnyRole('ROLE_TRIAL','ROLE_SILVER','ROLE_GOLD','ROLE_PLATINUM','ROLE_ENTERPRISE','ROLE_FREE')"/>
+
+         <logout invalidate-session="true" logout-url="/logout"/>
+
+        <remember-me key="redemptionkey" token-validity-seconds="2419200"/>
+
+    </http>
+
+    <beans:bean id="mySuccessHandler" class="com.marketeer.redemption.mvc.security.CustomSuccessHandler"/>
+    <beans:bean id="myFailureHandler" class="com.marketeer.redemption.mvc.security.CustomSuccessHandler"/>
+
+    <beans:bean id="encoder" class="com.marketeer.redemption.mvc.security.util.AuthenticationProvider"/>
+
+
+
+
+    <beans:bean
+            id="accessDecisionManager"
+            class="org.springframework.security.access.vote.UnanimousBased">
+        <beans:constructor-arg>
+            <beans:list>
+                <beans:bean class=
+                                    "org.springframework.security.web.access.expression.WebExpressionVoter"/>
+                <beans:bean class=
+                                    "org.springframework.security.access.vote.AuthenticatedVoter"/>
+                <beans:bean class=
+                                    "org.springframework.security.access.vote.RoleVoter"/>
+
+            </beans:list>
+        </beans:constructor-arg>
+    </beans:bean>
+
+
+    <jdbc-user-service id="userService"
+                       data-source-ref="dataSource"
+                       users-by-username-query="select email_address, password, role_fkey from system_auth where email_address=? and enabled=true"
+                       authorities-by-username-query="select sa.email_address, sr.role_name from system_auth sa, system_role sr where sa.role_fkey = sr.advert_role_pkey and sa.email_address =?" />
+
+    <authentication-manager>
+        <authentication-provider user-service-ref="userService">
+            <password-encoder ref="encoder"/>
+        </authentication-provider>
+    </authentication-manager>
+
+
+    <global-method-security secured-annotations="enabled"/>
+
+
+</beans:beans>

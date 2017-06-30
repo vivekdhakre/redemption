@@ -1,0 +1,682 @@
+.input-field .prefix {
+    color: #9e9e9e;
+}
+
+.font-size-10 {
+    font-size: 10px !important;
+}
+
+.font-size-12 {
+    font-size: 12px !important;
+}
+
+.font-size-14 {
+    font-size: 14px !important;
+}
+
+.font-size-16 {
+    font-size: 16px !important;
+}
+
+.font-size-18 {
+    font-size: 18px !important;
+}
+
+.font-size-20 {
+    font-size: 20px !important;
+}
+
+.font-size-22 {
+    font-size: 22px !important;
+}
+
+.font-size-24 {
+    font-size: 24px !important;
+}
+
+.font-size-26 {
+    font-size: 26px !important;
+}
+
+.weight-2 {
+    font-weight: 200 !important;
+}
+
+.weight-3 {
+    font-weight: 300 !important;
+}
+
+.weight-4 {
+    font-weight: 400 !important;
+}
+
+.weight-5 {
+    font-weight: 500 !important;
+}
+
+.weight-6 {
+    font-weight: 600 !important;
+}
+
+.app-nav .brand-logo {
+    float: left;
+    /*left: 100px;*/
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+.app-nav .brand-logo img.app-logo {
+    width: 90px;
+}
+
+.graph-card.card-panel {
+    padding: 0;
+    width: 100%;
+}
+
+.graph-card {
+    padding: 0 !important;
+    width: 100% !important;
+    float: left !important;
+    height: auto !important;
+}
+
+.login-main-page {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 8px 8px;
+    height: 100vh;
+    margin-bottom: -50px;
+}
+
+.login-main-page .col.s12 {
+    position: relative;
+}
+
+.login-footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.login-footer img {
+    display: inline;
+    margin: 0 5px;
+    max-width: 60px;
+}
+
+.brand_logo {
+    display: flow-root;
+    max-width: 720px;
+    margin: 0 auto;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.brand_logo img {
+    width: 100px;
+    background: white;
+    border-radius: 100%;
+    padding: 10px;
+    box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.14), 0 -5px 9px -5px rgba(0, 0, 0, 0.12), 0 -5px 5px -5px rgba(0, 0, 0, 0.3);
+}
+
+.brand_logo+.card-panel {
+    display: flow-root;
+    max-width: 720px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#footer {
+    padding-top: 0px;
+}
+
+#sidenav-overlay {
+    z-index: 99;
+}
+
+.deal_title {
+    text-align: justify !important;
+    letter-spacing: 0px;
+    line-height: 1.3rem !important;
+}
+
+.drag-target {
+    z-index: 99;
+}
+
+.campaign-duration {
+    width: 100%;
+}
+
+.campaign-duration ul {
+    padding: 0;
+    margin: 0;
+}
+
+.campaign-duration ul li {
+    display: inline-block;
+}
+
+.campaign-info-modal {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important;
+}
+
+.coupon-info-modal {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important;
+}
+
+.create-campaign-card {
+    width: 100%;
+    float: left;
+    padding: 20px 10px;
+    position: relative !important;
+}
+
+.deal-image-container {
+    padding: 0.75rem !important;
+    line-height: 0 !important;
+    position: relative !important;
+}
+
+.deal-image-container img {
+    width: 100%;
+}
+
+.deal-image-container input+label {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100% !important;
+    line-height: 0 !important;
+    padding-left: 0 !important;
+}
+
+.deal-image-container input:checked+label {
+    border: 1px solid gray;
+}
+
+.deal-image-container input+label:before,
+.deal-image-container input+label:after {
+    display: none;
+}
+
+.deal-image-container input {
+    z-index: 9;
+    opacity: 0 !important;
+    display: block;
+    left: 0 !important;
+    width: 100%;
+    height: 100%;
+}
+
+.deal-information {
+    padding: 0 0 20px 0;
+    float: left;
+}
+
+.deal-image-container input:checked+label {}
+
+.dashboard_title {
+    padding: 0 16px;
+    margin: 8px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card-panel.states-card {
+    float: left;
+    padding: 16px 8px;
+    text-align: center;
+    /*border-bottom: 1px solid #546e7a;*/
+}
+
+.card-panel.states-card p {
+    margin: 0;
+    float: left;
+    width: 100%;
+}
+
+.card-panel.states-card span.subtitle {
+    width: 100%;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.tabs .tab a {
+    color: rgba(96, 125, 139, 0.75) !important;
+}
+
+.tabs .tab a.active {
+    color: rgba(96, 125, 139, 1) !important;
+}
+
+.tabs .indicator {
+    background-color: rgba(96, 125, 139, 1) !important;
+}
+
+.text-wrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    float: left;
+    padding: 5px 0;
+}
+
+.deal-list ul.collection li.collection-item {
+    border-bottom: none !important;
+    margin-bottom: 12px;
+}
+
+.deal-list ul.collection {
+    border: none !important;
+    overflow: visible !important;
+}
+
+.campaign-info-modal .deal-detail-modal-content.modal-content {
+    padding: 60px 16px 16px;
+}
+
+.deal-detail-modal-content.modal-content .card-panel {
+    float: left;
+    width: 100%;
+    padding: 16px;
+    margin: -40px 0px 20px 0;
+}
+
+.coupon-info-modal .modal-content.deal-detail-modal-content {
+    height: calc(100% - 56px);
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    flex-direction: column;
+}
+
+.coupon-info-modal .modal-footer {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.deal-information .deal-detail-heading {
+    margin: 10px 0;
+}
+
+.action-button {
+    margin: 6px;
+    float: left;
+}
+
+.scanner-laser {
+    position: absolute;
+    margin: 40px;
+    height: 30px;
+    width: 30px;
+    opacity: 0.5;
+}
+
+.laser-rightBottom {
+    bottom: 0;
+    right: 0;
+    border-bottom: solid red 5px;
+    border-right: solid red 5px;
+}
+
+.laser-rightTop {
+    top: 0;
+    right: 0;
+    border-top: solid red 5px;
+    border-right: solid red 5px;
+}
+
+.laser-leftBottom {
+    bottom: 0;
+    left: 0;
+    border-bottom: solid red 5px;
+    border-left: solid red 5px;
+}
+
+.laser-leftTop {
+    top: 0;
+    left: 0;
+    border-top: solid red 5px;
+    border-left: solid red 5px;
+}
+
+.camera-selection {
+    width: 320px;
+}
+
+.camera-selection .select-wrapper {
+    background: white;
+}
+
+.offer-card .offer-title.card-title {
+    padding: 0 10px 10px;
+    width: 100%;
+}
+
+.offer-card .offer-title.card-title .offer-description {
+    width: 100%;
+}
+
+.custom-button {
+    float: left;
+    width: 40px;
+}
+
+.custom-button a i,
+.custom-button button i {
+    line-height: 40px;
+    height: 40px;
+}
+
+.custom-input {
+    float: left;
+    width: calc(100% - 80px);
+    padding: 0 10px;
+}
+
+.custom-input input {
+    height: 40px;
+}
+
+.custom-input input:focus:not([readonly]) {
+    border-bottom: 1px solid #dadada;
+    box-shadow: 0 0px 0 0 #dadada;
+}
+
+.custom-input input.valid {
+    border-bottom: 1px solid #dadada;
+    box-shadow: 0 0px 0 0 #dadada;
+}
+
+
+/*.navbar-fixed {
+    height: 120px !important;
+}*/
+
+.card-title.offer-title {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.card-title.offer-title p {
+    margin: 0;
+}
+
+.activator.btn-floating.halfway-fab {
+    right: 10px;
+    bottom: 40px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+}
+
+.activator.btn-floating.halfway-fab i {
+    line-height: 26px;
+    font-size: 1.2rem;
+}
+
+.card .card-reveal.custom-card-reveal {
+    padding: 10px;
+}
+
+.card .card-reveal.custom-card-reveal .card-title {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.18);
+    padding-bottom: 5px;
+    margin: 0 10px 10px;
+}
+
+.spacer-8 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+}
+
+.spacer-16 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+.spacer-8:after,
+.spacer-16:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.indicators {
+    display: none !important;
+}
+
+#offerImage.create-campaign-card .image-row {
+    height: 380px;
+    overflow: scroll;
+    margin-bottom: 56px;
+}
+
+#offerImage.create-campaign-card .filter-type {
+    margin-bottom: 0;
+}
+
+#offerImage.create-campaign-card .carousel-fixed-item {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 10px 0;
+}
+
+.collection-item.branchListItem {
+    padding: 0 !important;
+}
+
+#branchesList {
+    padding: 15px 0 15px;
+}
+
+#branchesList .collection.with-header {
+    max-height: 450px;
+    overflow: scroll;
+    margin: 0;
+}
+
+.collection-item.branchListItem label {
+    width: 100%;
+    height: 60px;
+    line-height: 20px;
+    padding-left: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.collection-item.branchListItem [type="checkbox"].filled-in+label:before,
+.collection-item.branchListItem [type="checkbox"].filled-in+label:after {
+    top: 20px !important;
+    left: 20px;
+}
+
+.collection-item.branchListItem [type="checkbox"].filled-in:checked+label:before {
+    left: 21px;
+}
+
+#tncModal {
+    width: 95%;
+}
+
+#tncModal .modal-content {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 15px;
+}
+
+.conditionList {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+[type="checkbox"]+label.conditionLabel {
+    width: 100%;
+    display: block;
+    height: 40px;
+    /* left: 10px; */
+    line-height: 30px;
+    top: 0;
+    padding-left: 40px;
+}
+
+.conditionList [type="checkbox"].filled-in+label.conditionLabel:before,
+.conditionList [type="checkbox"].filled-in+label.conditionLabel:after {
+    top: 10px;
+}
+
+.conditionList [type="checkbox"]:checked.filled-in+label.conditionLabel:before {
+    top: 10px;
+}
+
+.conditionLabel input {
+    margin: 0;
+    height: 30px;
+}
+
+.checkBoxes {
+    float: left;
+    margin: 5px;
+    line-height: 25px;
+    height: 25px;
+}
+
+.coupon-container {
+    border: 1px dashed rgba(96, 125, 139, 0.29);
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+ul.tnclist {
+    padding-left: 20px;
+}
+
+ul.tnclist li {
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+
+ul.timingRow li {
+    width: 12.5%;
+    float: left;
+}
+
+ul.andband li {
+    width: 100% !important;
+    float: left;
+}
+
+textarea.materialize-textarea,
+.select-wrapper input.select-dropdown {
+    color: #607d8b !important;
+}
+
+.card-panel.preview-card {
+    padding: 5px;
+    line-height: 0;
+}
+
+.card .card-image .card-title.mobile-banner-title {
+    background: rgba(0, 0, 0, 0.52);
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    line-height: 20px;
+    text-align: center;
+}
+
+.card .card-image .card-title.tablet-banner-title {
+    background: rgba(0, 0, 0, 0.52);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    line-height: 20px;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #f7f7f7;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.dropdown-content li>a,
+.dropdown-content li>span {
+    text-transform: uppercase;
+}
+
+.offer-duration,
+.offer-days {
+    width: 100%;
+    float: left;
+    margin: 5px 0;
+}
+
+.offer-days li {
+    display: inline-block;
+}
+
+.offer-duration li {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.offer-preview-card {
+    float: left;
+    width: 100%;
+}
+
+.card.offer-preview-card .card-content {
+    float: left;
+    width: 100%;
+}
+
+.confirm-modal {
+    max-width: 300px;
+}
+@media only screen and (max-width: 992px) {
+    nav .brand-logo {
+        left: 10% !important;
+    }
+}
